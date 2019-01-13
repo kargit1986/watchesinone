@@ -1,0 +1,15 @@
+{
+  "name": "node-watch",
+  "version": "0.0.0",
+  "description": "NodeWatch",
+  "main": "server.js",
+  "author": {
+    "name": "072601"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.22.2",
+    "consul": "^0.34.1",
+    "node-vault": "^0.9.4",
+    "request": "^2.88.0"
+  }
+}

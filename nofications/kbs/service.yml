@@ -1,0 +1,11 @@
+﻿kind: Service
+apiVersion: v1
+metadata:
+  name: consulwatchsvc
+spec:
+  selector:
+    app: consulwatchapp
+  ports:
+  - protocol: TCP
+    port: 1338
+    targetPort: 1338

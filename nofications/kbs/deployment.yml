@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consulwatchapp
+  labels:
+    app: consulwatchapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: consulwatchapp
+  template:
+    metadata:
+      labels:
+        app: consulwatchapp
+    spec:
+      containers:
+      - name: consulwatchapp
+        image: gcr.io/qtg-shared-mgmt-1t/consultest/consulwatch
+        ports:
+        - containerPort: 80
